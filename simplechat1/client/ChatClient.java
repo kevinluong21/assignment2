@@ -96,13 +96,11 @@ public class ChatClient extends AbstractClient
   }
 
   protected void connectionClosed() { // *** Changed for E49 KL
-    System.out.println("Server has shut down. Quitting...");
-    System.exit(0); //exits program
+    System.out.println("Server has shut down or the client has quit the server.");
   }
 
   protected void connectionException(Exception exception) { // **** Changed for E49 KL
-    System.out.println("Server has shut down. Quitting...");
-    System.exit(0); //exits program
+    System.out.println("Server has shut down or the client has quit the server.");
   }
 }
 
